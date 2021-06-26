@@ -11,6 +11,8 @@
 		C5346C7C2686C6E40066EA43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5346C7B2686C6E40066EA43 /* ContentView.swift */; };
 		C5346C7E2686C6EF0066EA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5346C7D2686C6EF0066EA43 /* Assets.xcassets */; };
 		C5346C812686C6EF0066EA43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5346C802686C6EF0066EA43 /* Preview Assets.xcassets */; };
+		C5346C8A2686C71E0066EA43 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5346C892686C71E0066EA43 /* Friend.swift */; };
+		C5346C8D2686CC5D0066EA43 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5346C8C2686CC5D0066EA43 /* FriendDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		C5346C7D2686C6EF0066EA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5346C802686C6EF0066EA43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5346C822686C6EF0066EA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5346C892686C71E0066EA43 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		C5346C8C2686CC5D0066EA43 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				C5346C792686C6E40066EA43 /* FriendsAppApp.swift */,
 				C5346C7B2686C6E40066EA43 /* ContentView.swift */,
+				C5346C8C2686CC5D0066EA43 /* FriendDetailView.swift */,
+				C5346C892686C71E0066EA43 /* Friend.swift */,
 				C5346C7D2686C6EF0066EA43 /* Assets.xcassets */,
 				C5346C822686C6EF0066EA43 /* Info.plist */,
 				C5346C7F2686C6EF0066EA43 /* Preview Content */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5346C8A2686C71E0066EA43 /* Friend.swift in Sources */,
 				C5346C7C2686C6E40066EA43 /* ContentView.swift in Sources */,
 				C5346C7A2686C6E40066EA43 /* FriendsAppApp.swift in Sources */,
+				C5346C8D2686CC5D0066EA43 /* FriendDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,6 +30,7 @@ struct FriendDetailView: View {
                 .font(.system(size: 24))
                 .padding()
             Text("About me: \(friend.description)")
+                .font(.body)
             Spacer()
                 
         }.navigationTitle(friend.name)

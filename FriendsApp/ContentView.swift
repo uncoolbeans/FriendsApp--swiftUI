@@ -22,7 +22,12 @@ struct ContentView: View {
                           icon: "wifi",
                           school: "NUS High",
                           slothImage: "sloth1",
-                          description: "wifi is no more 🚫")]
+                          description: "wifi is no more 🚫"),
+                   Friend(name: "Bill",
+                          icon: "pencil",
+                          school: "Clementi Town Sec",
+                          slothImage: "sloth2",
+                          description: "dababy lessgoo")]
     var body: some View {
         NavigationView {
             List(friends) { friend in

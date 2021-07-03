@@ -12,37 +12,48 @@ struct ContentView: View {
                           icon: "zzz",
                           school: "Tinkercademy",
                           slothImage: "sloth3",
-                          description: "nutella nutella nutella 🌰"),
+                          description: "nutella nutella nutella 🌰",
+                          attack: 10,
+                          defense: 5 ),
                    Friend(name: "Jia Chen",
                           icon: "swift",
                           school: "Ngee Ann Poly",
-                          slothImage: "sloth2", description: "i ❤️ xcodee 🧑🏼‍💻"),
+                          slothImage: "sloth2", description: "i ❤️ xcodee 🧑🏼‍💻",
+                          attack: 5,
+                          defense: 10),
                           
                    Friend(name: "Zerui",
                           icon: "wifi",
                           school: "NUS High",
                           slothImage: "sloth1",
-                          description: "wifi is no more 🚫"),
+                          description: "wifi is no more 🚫",
+                          attack: 15,
+                          defense: 0),
                    Friend(name: "Bill",
                           icon: "pencil",
                           school: "Clementi Town Sec",
                           slothImage: "sloth2",
-                          description: "dababy lessgoo")]
+                          description: "dababy lessgoo",
+                          attack: 10,
+                          defense: 10)]
     var body: some View {
         NavigationView {
-            List($friends) { friend in
-                NavigationLink(destination: FriendDetailView(friend: friend)) {
-                    Image(systemName: friend.wrappedValue.icon)
-                
-                VStack(alignment: .leading) {
-                    Text(friend.wrappedValue.name).bold()
-                    Text(friend.wrappedValue.school)
+                List(0..<friends.count) { index in
+                            NavigationLink(destination: FriendDetailView(friend: $friends[index])) {
+                                Image(systemName: friends[index].icon)
+                                
+                                VStack(alignment: .leading) {
+                                    Text(friends[index].name)
+                                        .bold()
+                                    Text(friends[index].school)
+                                }
+                            }
+                        }
+                        .navigationTitle("Friends")
                     }
                 }
-            }.navigationTitle("Friends")
-        }
-    }
-}
+            }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

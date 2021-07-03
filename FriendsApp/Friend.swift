@@ -13,4 +13,7 @@ struct Friend: Identifiable {
     var school: String
     var slothImage: String
     var description: String
+    var attack : Double
+    var defense : Double
+
 }

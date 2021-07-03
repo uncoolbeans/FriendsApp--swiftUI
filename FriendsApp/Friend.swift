@@ -15,5 +15,6 @@ struct Friend: Identifiable {
     var description: String
     var attack : Double
     var defense : Double
+    var type: [FriendType]
 
 }

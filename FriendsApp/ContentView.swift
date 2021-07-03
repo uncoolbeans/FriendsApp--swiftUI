@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var friends = [Friend(name: "YJ",
+    @State var friends = [Friend(name: "YJ",
                           icon: "zzz",
                           school: "Tinkercademy",
                           slothImage: "sloth3",
@@ -30,13 +30,13 @@ struct ContentView: View {
                           description: "dababy lessgoo")]
     var body: some View {
         NavigationView {
-            List(friends) { friend in
+            List($friends) { friend in
                 NavigationLink(destination: FriendDetailView(friend: friend)) {
-                Image(systemName: friend.icon)
+                    Image(systemName: friend.wrappedValue.icon)
                 
                 VStack(alignment: .leading) {
-                    Text(friend.name).bold()
-                    Text(friend.school)
+                    Text(friend.wrappedValue.name).bold()
+                    Text(friend.wrappedValue.school)
                     }
                 }
             }.navigationTitle("Friends")

@@ -59,15 +59,20 @@ struct ContentView: View {
                                 
                                 Spacer()
                                 
-                                ForEach(friend.types, id: \.rawValue) { type in
+                                ForEach(friend.type, id: \.rawValue) { type in
                                     Image(systemName: type.getSymbolName())
                                 }
                             }
                         }
                     }
+                }.onDelete { offsets in
+                    friends.remove(atOffsets: offsets)
+                }.onMove { source, destination in
+                    friends.move(fromOffsets: source, toOffset: destination)
                 }
             }
             .navigationTitle("Friends")
+            .navigationBarItems(leading: EditButton())
         }
     }
 }

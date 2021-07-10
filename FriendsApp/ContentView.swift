@@ -40,25 +40,28 @@ struct ContentView: View {
                                  attack: 10,
                                  defense: 10,
                                  type: [.ice,.electric,.grass])]
+    
     var body: some View {
         NavigationView {
             
-            List(friends) { friend in
-                let friendIndex = friends.firstIndex(of: friend)!
-                
-                NavigationLink(destination: FriendDetailView(friend: $friends[friendIndex])) {
-                    Image(systemName: friend.icon)
+            List {
+                ForEach(friends) { friend in
+                    let friendIndex = friends.firstIndex(of: friend)!
                     
-                    VStack(alignment: .leading) {
-                        Text(friend.name)
-                            .bold()
-                        HStack {
-                            Text(friend.school)
-                            
-                            Spacer()
-                            
-                            ForEach(friend.types, id: \.rawValue) { type in
-                                Image(systemName: type.getSymbolName())
+                    NavigationLink(destination: FriendDetailView(friend: $friends[friendIndex])) {
+                        Image(systemName: friend.icon)
+                        
+                        VStack(alignment: .leading) {
+                            Text(friend.name)
+                                .bold()
+                            HStack {
+                                Text(friend.school)
+                                
+                                Spacer()
+                                
+                                ForEach(friend.types, id: \.rawValue) { type in
+                                    Image(systemName: type.getSymbolName())
+                                }
                             }
                         }
                     }
@@ -75,3 +78,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

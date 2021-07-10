@@ -40,7 +40,7 @@ struct ContentView: View {
                                  attack: 10,
                                  defense: 10,
                                  type: [.ice,.electric,.grass])]
-    
+    @State var isSheetPresented = false
     var body: some View {
         NavigationView {
             
@@ -72,7 +72,14 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Friends")
-            .navigationBarItems(leading: EditButton())
+            .navigationBarItems(leading: EditButton(),trailing: Button(action: {
+                isSheetPresented = true
+            }, label: {
+                Image(systemName: "plus")
+            }))
+            
+        }.sheet(isPresented: $isSheetPresented) {
+            NewFriendView(friends: $friends)
         }
     }
 }

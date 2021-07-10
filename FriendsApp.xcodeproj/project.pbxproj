@@ -15,6 +15,7 @@
 		C5346C8D2686CC5D0066EA43 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5346C8C2686CC5D0066EA43 /* FriendDetailView.swift */; };
 		C5346C90269009000066EA43 /* FriendType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5346C8F269009000066EA43 /* FriendType.swift */; };
 		C588E2B5269943B40070C56D /* NewFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E2B4269943B40070C56D /* NewFriendView.swift */; };
+		C588E2B826994BBD0070C56D /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588E2B726994BBD0070C56D /* FriendData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C5346C8C2686CC5D0066EA43 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 		C5346C8F269009000066EA43 /* FriendType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendType.swift; sourceTree = "<group>"; };
 		C588E2B4269943B40070C56D /* NewFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendView.swift; sourceTree = "<group>"; };
+		C588E2B726994BBD0070C56D /* FriendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C5346C8F269009000066EA43 /* FriendType.swift */,
 				C5346C8C2686CC5D0066EA43 /* FriendDetailView.swift */,
 				C5346C892686C71E0066EA43 /* Friend.swift */,
+				C588E2B726994BBD0070C56D /* FriendData.swift */,
 				C5346C7D2686C6EF0066EA43 /* Assets.xcassets */,
 				C5346C822686C6EF0066EA43 /* Info.plist */,
 				C5346C7F2686C6EF0066EA43 /* Preview Content */,
@@ -156,6 +159,7 @@
 				C5346C7C2686C6E40066EA43 /* ContentView.swift in Sources */,
 				C5346C7A2686C6E40066EA43 /* FriendsAppApp.swift in Sources */,
 				C5346C8D2686CC5D0066EA43 /* FriendDetailView.swift in Sources */,
+				C588E2B826994BBD0070C56D /* FriendData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
